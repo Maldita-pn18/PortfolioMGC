@@ -6,9 +6,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative*/
-    height:100vh;
+    height: 100vh;
     /*background:gray;*/
 }
+
 .profileInfo {
     margin: 0;
     font-style: initial;
@@ -19,20 +20,21 @@
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+
 .test {
-    padding: 15px 32px;
-    font-size: 16px;
-    margin: 4px 2px;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    background-color: transparent;
-    box-shadow: none;
+    background-color: #03BFCB;
+    border: 1px solid #03BFCB;
+    border-radius: 3px;
+    color: #231E39;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    padding: 10px 25px;
 }
+
 .test:hover {
-    background-color: skyblue;
+    background-color: transparent;
     color: white;
-}
+    }
 /*.test:focus {
     border: red;
     color: white;

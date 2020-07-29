@@ -1,28 +1,38 @@
 ﻿@{
-    ViewBag.Title = "";
-}
-<br />
-<br />
-<div>
-    <center><h2>ABOUT</h2></center>
-</div>
-<div class="card">
-    <img src="~/Assets/nana.png" alt="Grace" style="width:100%">
-    <h1>Mary Grace Cordoto</h1>
-    <h5><i>"The expert at anything was once a beginner"</i></h5>
-    <p class="title">PN Scholar</p>
-    <h4>University of San Carlos</h4>
-    <div style="margin: 24px 0;">
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-    </div>
-    <p><button class="icon" type="button">Contact</button></p>
+        ViewBag.Title = "";
+    }
     <br />
-</div>
+    <br />
+    <div>
+        <center><h2>ABOUT</h2></center>
+    </div>
+
 <link rel="stylesheet" href="~/Content/AboutStyle.css" type="text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div class="row">
-
+<div class="card-container">
+    <img class="round" src="~/Assets/nana.png" alt="user" />
+    <h3>Mary Grace Cordoto</h3>
+    <h6>Passerelles Numeriques Scholar</h6>
+    <p>Web developer</p>
+    <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-envelope-o" ></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-github" ></i></a></li>
+    </ul>
+    <div class="buttons">
+        <button class="primary">
+            Contact
+        </button>
+    </div>
+    <div class="skills">
+        <h6><b>Skills</b></h6>
+        <ul>
+            <li>Front End Development</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Node</li>
+        </ul>
+    </div>
 </div>

@@ -1,46 +1,146 @@
-﻿.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    margin: auto;
-    text-align: center;
-    font-style: initial;
+﻿
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+* {
+    box-sizing: border-box;
 }
 
-.title {
-    color: black;
-    font-size: 20px;
+body {
+    background-color: #28223F;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+h2 {
+    color:white;
+}
+h3 {
+    margin: 10px 0;
 }
 
-button {
+h6 {
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.card-container {
+    background-color: #231E39;
     border-radius: 5px;
-    padding: 8px;
-    color: black;
-    background-color: white;
+    border: 1px solid white;
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+    color: #B3B8CD;
+    padding-top: 30px;
+    position: relative;
+    width: 350px;
+    max-width: 100%;
     text-align: center;
-    width: 50%;
-    font-size: 18px;
 }
 
-a {
-    font-size: 22px;
-    color: blue;
+
+
+    .card-container .round {
+        border: 1px solid #03BFCB;
+        border-radius: 50%;
+        padding: 7px;
+    }
+
+button.primary {
+    background-color: #03BFCB;
+    border: 1px solid #03BFCB;
+    border-radius: 3px;
+    color: #231E39;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    padding: 10px 25px;
 }
 
- a:hover {
-    opacity: 0.7;
+    button.primary.ghost {
+        background-color: transparent;
+        color: #02899C;
+    }
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
 }
-.icon {
-    padding: 15px 32px;
-    font-size: 16px;
-    margin: 4px 2px;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: white;
-    background-color: slategrey;
-    box-shadow: none;
+
+    .social-icons li {
+        display: inline-block;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1em;
+    }
+
+    .social-icons i {
+        color: #fff;
+        position: absolute;
+        top: 0.95em;
+        left: 0.96em;
+        transition: all 265ms ease-out;
+    }
+
+    .social-icons a {
+        display: inline-block;
+    }
+
+        .social-icons a:before {
+            transform: scale(1);
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            content: " ";
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, #ff003c, #c648c8);
+            transition: all 265ms ease-out;
+        }
+
+        .social-icons a:hover:before {
+            transform: scale(0);
+            transition: all 265ms ease-in;
+        }
+
+        .social-icons a:hover i {
+            transform: scale(2.2);
+            -ms-transform: scale(2.2);
+            -webkit-transform: scale(2.2);
+            color: #ff003c;
+            background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 265ms ease-in;
+        }
+
+.skills {
+    background-color: #1F1A36;
+    text-align: left;
+    padding: 15px;
+    margin-top: 30px;
 }
-.icon:hover {
-        background-color: skyblue;
-        color: white;
-}
+
+    .skills ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .skills ul li {
+            border: 1px solid #2D2747;
+            border-radius: 2px;
+            display: inline-block;
+            font-size: 12px;
+            margin: 0 7px 7px 0;
+            padding: 7px;
+        }
 
