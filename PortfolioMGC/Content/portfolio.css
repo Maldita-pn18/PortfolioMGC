@@ -1,0 +1,42 @@
+﻿.parallax {
+    /*background-image: url("https://media.bitdegree.org/storage/media/images/2018/08/what-is-a-web-developer.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative*/
+    height:100vh;
+    /*background:gray;*/
+}
+.profileInfo {
+    margin: 0;
+    font-style: initial;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.test {
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    box-shadow: none;
+}
+    .test:hover {
+        background-color: skyblue;
+        color: white;
+    }
+/*.test:focus {
+    border: red;
+    color: white;
+    background-color: lightblue;
+    box-shadow: none;
+    outline: none;
+}*/

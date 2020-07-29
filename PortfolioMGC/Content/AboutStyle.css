@@ -1,0 +1,46 @@
+﻿.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-style: initial;
+}
+
+.title {
+    color: black;
+    font-size: 20px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 8px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    width: 50%;
+    font-size: 18px;
+}
+
+a {
+    font-size: 22px;
+    color: blue;
+}
+
+ a:hover {
+    opacity: 0.7;
+}
+.icon {
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: slategrey;
+    box-shadow: none;
+}
+.icon:hover {
+        background-color: skyblue;
+        color: white;
+}
+
