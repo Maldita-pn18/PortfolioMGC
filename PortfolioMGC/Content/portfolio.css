@@ -29,10 +29,10 @@
     background-color: transparent;
     box-shadow: none;
 }
-    .test:hover {
-        background-color: skyblue;
-        color: white;
-    }
+.test:hover {
+    background-color: skyblue;
+    color: white;
+}
 /*.test:focus {
     border: red;
     color: white;

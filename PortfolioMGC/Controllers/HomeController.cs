@@ -8,9 +8,10 @@ namespace PortfolioMGC.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
         public ActionResult About()
         {
-            return View();
+            return View("About");
         }
         public ActionResult Home()
         {
