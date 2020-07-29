@@ -1,27 +1,28 @@
 ﻿@{
-        ViewBag.Title = "";
-    }
-    <br />
-    <br />
-    <div>
-        <center><h2>ABOUT</h2></center>
-    </div>
+    ViewBag.Title = "";
+}
+<br />
+<br />
+<div>
+    <center><h2>ABOUT</h2></center>
+</div>
 
 <link rel="stylesheet" href="~/Content/AboutStyle.css" type="text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="card-container">
     <img class="round" src="~/Assets/nana.png" alt="user" />
     <h3>Mary Grace Cordoto</h3>
+    <i>"An expert in anything was once a beginner"</i>
     <h6>Passerelles Numeriques Scholar</h6>
     <p>Web developer</p>
     <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-envelope-o" ></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa fa-github" ></i></a></li>
+        <li><a href="https://accounts.google.com/"><i class="fa fa-envelope-o"></i></a></li>
+        <li><a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://linkedin.com/login"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/login"><i class="fa fa-github"></i></a></li>
     </ul>
     <div class="buttons">
-        <button class="primary">
+        <button id="contact" class="primary contactBTN">
             Contact
         </button>
     </div>
@@ -36,3 +37,20 @@
         </ul>
     </div>
 </div>
+@Scripts.Render("~/bundles/jquery")
+<script>
+
+    $('#contact').on('click', function () {
+        $.ajax({
+            url: 'Home/Contact',
+            data: {},
+            type: 'GET',
+            success: function (result) {
+                window.location.href = "/Home/Contact"
+            },
+            error: function (error) {
+                console.log(error)
+            }
+        });
+    });
+</script>

@@ -13,6 +13,7 @@ namespace PortfolioMGC.Controllers
         {
             return View("About");
         }
+        [HttpGet]
         public ActionResult Home()
         {
             return View();
@@ -21,15 +22,13 @@ namespace PortfolioMGC.Controllers
         public ActionResult Projects()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
-
+        [HttpGet]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
-            return View();
+            return View("Contact");
         }
         public ActionResult Resume()
         {
