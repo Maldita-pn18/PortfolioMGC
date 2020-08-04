@@ -1,7 +1,33 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
+
+
+
+<link rel="stylesheet" href="~/Content/Contact.css" type="text/css" />
+<!------ Include the above in your HEAD tag ---------->
+<br />
+<div class="alrazy-title" data-splitting>Contact</div>
+<script src="https://unpkg.com/splitting@1.0.0/dist/splitting.js"></script>
+<script>
+    Splitting();
+</script>
+<br />
+<div>
+    <h3>• Share with Us •</h3>
+</div>
+<br />
+<div class="card-container">
+    <form>
+        <input  placeholder="Name" type="text" name="name" required="">
+        <input  placeholder="Enter email" type="email" name="email" required="">
+        <textarea  placeholder="Your Message" type="text" name="message"></textarea>
+    </form>
+    <br />
+
+    <button class="button" type="submit">Submit</button>
+</div>
+
 
 
 
