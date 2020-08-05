@@ -1,23 +1,35 @@
-﻿@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+﻿
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
 
-html, body {
+* {
+    box-sizing: border-box;
+}
+
+.contact {
     color: white;
     text-align: center;
-    background-color: #28223F;
 }
 
 html {
-    height: 20%;
     display: flex;
 }
 
 body {
+    background-color: #28223F;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     margin: auto;
 }
 
 .alrazy-title {
-    font-family:  Helvetica;
-    font-size: calc( 20vw / var(--char-total) );
+    font-family: Helvetica;
+    font-size: calc( 15vw / var(--char-total) );
     position: relative;
     padding: 0.2em 0;
     overflow: hidden;
@@ -57,8 +69,8 @@ body {
     animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-delay: calc( .5s + (.1s * var(--word-index)) );
-    animation-delay: calc( .5s + (.1s * var(--word-index)) );
+    -webkit-animation-delay: calc( .1s + (.1s * var(--word-index)) );
+    animation-delay: calc( .1s + (.1s * var(--word-index)) );
 }
 
 @-webkit-keyframes slide-up {
@@ -78,6 +90,7 @@ body {
 .splitting-mark {
     color: #FFF !important;
 }
+
 h3 {
     font-size: 30px;
     background: -webkit-linear-gradient(#eee, #333);
@@ -98,7 +111,7 @@ h3 {
     text-align: center;
 }
     .card-container .round {
-        background-color: #1F1A36;
+    background-color: #1F1A36;
     text-align: left;
     padding: 15px;
     margin-top: 30px;
