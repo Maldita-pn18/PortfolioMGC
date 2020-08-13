@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>@ViewBag.Title - My Portfolio</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -31,22 +34,25 @@
     <div>
         @RenderBody()
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     <style>
+
         .portfolioNavbar {
-            background: linear-gradient(45deg, #0e76a8, #c648c8)!important;
+            background: linear-gradient(45deg, #0e76a8, #c648c8) !important;
             color: white;
             border-bottom: 3px solid black;
         }
+
         .navbar-brand {
             color: white !important;
         }
+
             .navbar-brand:hover {
                 color: #231E39 !important;
             }
+
     </style>
 </body>
 </html>

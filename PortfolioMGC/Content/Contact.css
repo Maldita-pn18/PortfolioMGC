@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
 
-* {
-    box-sizing: border-box;
-}
 
 .contact {
     color: white;
@@ -25,11 +22,12 @@ body {
     min-height: 100vh;
     margin: 0;
     margin: auto;
+
 }
 
 .alrazy-title {
     font-family: Helvetica;
-    font-size: calc( 15vw / var(--char-total) );
+    font-size: calc( 20vw / var(--char-total) );
     position: relative;
     padding: 0.2em 0;
     overflow: hidden;
@@ -109,6 +107,7 @@ h3 {
     height: 500px;
     max-width: 100%;
     text-align: center;
+   
 }
     .card-container .round {
     background-color: #1F1A36;

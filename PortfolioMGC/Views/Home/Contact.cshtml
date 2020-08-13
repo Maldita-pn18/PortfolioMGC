@@ -5,6 +5,7 @@
 
 
 <link rel="stylesheet" href="~/Content/Contact.css" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <!------ Include the above in your HEAD tag ---------->
 <br />
 <div class="alrazy-title contact" data-splitting>Contact</div>
@@ -15,17 +16,45 @@
 <br />
 <div class="card-container">
     <form>
-            <h3>• Share with Us •</h3>
+        <h3>• Be in touch •</h3>
         <br />
-        <input placeholder="Name" type="text" name="name" required="">
-        <input placeholder="Enter email" type="email" name="email" required="">
-        <textarea placeholder="Your Message" type="text" name="message"></textarea>
+        <input id="name" placeholder="Name" type="text" name="name" required="required" value="">
+        <input id="email" placeholder="Enter email" type="email" name="email" required="required" value="">
+        <textarea id="message" placeholder="Your Message" type="text" name="message" required="required" value=""></textarea>
+        <br />
+        <button id="send" class="button" type="submit">Submit</button>
     </form>
-    <br />
-
-    <button class="button" type="submit">Submit</button>
+   
+    
 </div>
+@Scripts.Render("~/bundles/jquery")
+<script>
+    $('#send').on('click', function (e) {
+        e.preventDefault()
+        if ($('#name').val() !== "" && $('#email').val() !== "" && $('#message').val() !== "") {
+            $.ajax({
+                url: '/Home/submit?email=' + $('#email').val() + "&name=" + $('#name').val() + "&message=" + $('#message').val(),
+                data: {},
+                type: 'POST',
+                success: function (result) {
+                    window.location.href = "/Home/Home"
+                },
+                error: function (error) {
+                    console.log('error ', error)
+                }, failed: function (res) {
+                    console.log('failed ', res)
+                }
+            });
+        } else {
+            Swal.fire({
+                icon: 'warning',
+                title: 'All fields are required!',
+            })
+        }
+    });
+    
 
+</script>
 
 
 

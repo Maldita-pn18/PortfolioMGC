@@ -226,3 +226,13 @@ C:\Users\2ndyrGroupC\Desktop\Cordoto Files\PortfolioMGC\PortfolioMGC\obj\Debug\P
 C:\Users\2ndyrGroupC\Desktop\Cordoto Files\PortfolioMGC\PortfolioMGC\obj\Debug\PortfolioMGC.csproj.CopyComplete
 C:\Users\2ndyrGroupC\Desktop\Cordoto Files\PortfolioMGC\PortfolioMGC\obj\Debug\PortfolioMGC.dll
 C:\Users\2ndyrGroupC\Desktop\Cordoto Files\PortfolioMGC\PortfolioMGC\obj\Debug\PortfolioMGC.pdb
+C:\Users\2ndyrGroupC\Desktop\CordotoFiles\PortfolioMGC\PortfolioMGC\bin\SendGrid.dll
+C:\Users\2ndyrGroupC\Desktop\CordotoFiles\PortfolioMGC\PortfolioMGC\bin\StarkbankEcdsa.dll
+C:\Users\2ndyrGroupC\Desktop\CordotoFiles\PortfolioMGC\PortfolioMGC\bin\SendGrid.pdb
+C:\Users\2ndyrGroupC\Desktop\CordotoFiles\PortfolioMGC\PortfolioMGC\bin\SendGrid.xml
+C:\Users\2ndyrGroupC\Desktop\CordotoFiles\PortfolioMGC\PortfolioMGC\bin\System.Net.Http.Formatting.dll
+C:\Users\2ndyrGroupC\Desktop\CordotoFiles\PortfolioMGC\PortfolioMGC\bin\System.Web.Http.dll
+C:\Users\2ndyrGroupC\Desktop\CordotoFiles\PortfolioMGC\PortfolioMGC\bin\System.Web.Http.WebHost.dll
+C:\Users\2ndyrGroupC\Desktop\CordotoFiles\PortfolioMGC\PortfolioMGC\bin\System.Net.Http.Formatting.xml
+C:\Users\2ndyrGroupC\Desktop\CordotoFiles\PortfolioMGC\PortfolioMGC\bin\System.Web.Http.xml
+C:\Users\2ndyrGroupC\Desktop\CordotoFiles\PortfolioMGC\PortfolioMGC\bin\System.Web.Http.WebHost.xml

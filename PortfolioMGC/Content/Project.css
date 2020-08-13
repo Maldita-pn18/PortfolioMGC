@@ -73,23 +73,5 @@ body {
     color: #FFF !important;
 }
 
-.col4 {
-    width: 33.33333333%;
-    float: left;
-    position: relative;
-}
 
-    .col4 .box-fx {
-        background-color: #231E39;
-        margin: 20px;
-        padding: 50px;
-        background-color: #231E39;
-        border-radius: 5px;
-        border: 1px solid white;
-        box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
-        color: #B3B8CD;
-        position: relative;
-        width: auto;
-        height: auto;
-    }
 
